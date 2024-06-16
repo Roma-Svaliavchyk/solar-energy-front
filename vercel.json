@@ -1,7 +1,6 @@
 {
-    "trailingSlash": true,
-    "rewrites": [
-      { "source": "/html/(.)", "destination": "/html/$1" },
-      { "source": "/(.)", "destination": "/html/index.html" }
+    "routes": [
+      { "src": "/aut", "dest": "/html/aut.html" },
+      { "src": "/contact", "dest": "/contact.html" }
     ]
   }
