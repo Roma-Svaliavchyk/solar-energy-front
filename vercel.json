@@ -1,6 +1,9 @@
 {
+    "trailingSlash": true,
     "rewrites": [
-      { "source": "/html/(.)", "destination": "/html/$1" },
-      { "source": "/(.)", "destination": "/html/index.html" }
+      { "source": "/html/(.*)", "destination": "/html/$1" }
+    ],
+    "redirects": [
+      { "source": "/", "destination": "/html/index.html", "statusCode": 301 }
     ]
   }
