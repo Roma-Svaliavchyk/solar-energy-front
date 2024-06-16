@@ -1,7 +1,6 @@
 import axios from 'axios';
-//const axios = require('axios');
 
-axios.get('http://localhost:3003/order')
+axios.get('https://solar-energy-serv.onrender.com')
   .then(response => {
     console.log('Отримана відповідь від сервера:');
     console.log(response.data); // Вивести отримані дані у консоль
