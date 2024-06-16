@@ -1,7 +1,5 @@
 {
     "rewrites": [
-      { "source": "/aut", "destination": "./html/aut.html" },
-      { "source": "/(.*)", "destination": "/$1.html" }      
-    ],
-    "trailingSlash": true
+      { "source": "/html/(.*)", "destination": "/html/$1" }
+    ]
   }
