@@ -11,8 +11,8 @@ console.log(localStorage.getItem("email"));
 const container = document.querySelector("#js-list-order");
 const getOrgersQuery =
   localStorage.getItem("email") === "admin@gmail.com"
-    ? "http://localhost:3003/order"
-    : "http://localhost:3003/userOrders/" + localStorage.getItem("email");
+    ? "https://solar-energy-serv.onrender.com/order"
+    : "https://solar-energy-serv.onrender.com/userOrders/" + localStorage.getItem("email");
 
 axios
   .get(getOrgersQuery)

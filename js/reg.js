@@ -23,7 +23,7 @@ function handleSubmit(event) {
   };
 
   axios
-  .post("http://localhost:3003/auth/reg", userData)
+  .post("https://solar-energy-serv.onrender.com/auth/reg", userData)
   .then((response) => {
     try{
       console.log("Отримана відповідь від сервера:");

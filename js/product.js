@@ -13,11 +13,9 @@ if(localStorage.getItem("email") == "admin@gmail.com"){
 //const axios = require('axios');
 
 const container = document.querySelector("#js-list-products");
-const getOrgersQuery = "http://localhost:3003/products";
+const getOrgersQuery = "https://solar-energy-serv.onrender.com/products";
   localStorage.getItem("email") === "admin@gmail.com"
-    /* ? "http://localhost:3003/products"
-    : "http://localhost:3003/products/" + localStorage.getItem("email");*/
-
+   
 axios
   .get(getOrgersQuery)
   .then((response) => {

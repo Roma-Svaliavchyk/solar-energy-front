@@ -1,9 +1,6 @@
 import axios from "axios";
 console.log("axios conect");
 
-//localStorage.setItem("token", "token")
-
-//localStorage.setItem("token", "")
 console.log(localStorage.getItem("token"));
 
 const form = document.querySelector('.form-acc-js');
@@ -28,7 +25,7 @@ function handleSubmit(event) {
   console.log(orderrData);
 
   axios
-  .post("http://localhost:3003/order", orderrData,{
+  .post("https://solar-energy-serv.onrender.com/order", orderrData,{
     headers: {
       Authorization: "Bearer " +  localStorage.getItem("token")// Ваш токен тут
     }
@@ -68,7 +65,6 @@ function handleSubmit(event) {
     console.error(error.response.data.message);
     
     let errorMessage = `<li class="item-error">${error.response.data.message}</li>`;
-    //errorMessage += `<li class="item-error">Заповніть всі поля!</li>`;
 
     container.innerHTML = errorMessage;
 
@@ -77,11 +73,6 @@ function handleSubmit(event) {
 
   });
 
-  /*
-  document.getElementById('login').value = '';
-  document.getElementById('pasvord').value = '';
-  document.getElementById('email').value = '';
-  document.getElementById('tel').value = '';*/
 }
 
 
